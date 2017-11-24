@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\14.7\ISE_DS\5-Example\vga\top_sdram.ncd
+OUTFILE=D:\14.7\ISE_DS\5-Example\vga\top_sdram.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=D:\14.7\ISE_DS\5-Example\vga
+LICENSE=WebPack
+USER_INFO=__0_0_0

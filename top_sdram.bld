@@ -1,0 +1,36 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: D:\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -intstyle ise
+-dd _ngo -sd ipcore_dir -nt timestamp -uc top_sdram.ucf -p xc6slx9-tqg144-3
+top_sdram.ngc top_sdram.ngd
+
+Reading NGO file "D:/14.7/ISE_DS/5-Example/vga/top_sdram.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "top_sdram.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 165780 kilobytes
+
+Writing NGD file "top_sdram.ngd" ...
+Total REAL time to NGDBUILD completion:  2 sec
+Total CPU time to NGDBUILD completion:   2 sec
+
+Writing NGDBUILD log file "top_sdram.bld"...

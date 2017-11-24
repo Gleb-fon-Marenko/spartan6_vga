@@ -1,0 +1,75 @@
+
+NET "SDRAM_clk" CLOCK_DEDICATED_ROUTE = FALSE;
+PIN "pll25_175/clkout1_buf.O" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "clk48" LOC = P56;
+NET "rst_n" LOC = P17;
+
+
+NET "clock_enable" IOSTANDARD = LVCMOS25;
+
+
+NET "cas_n" LOC = P116;
+NET "clock_enable" LOC = P133;
+
+
+NET "SDRAM_clk" LOC = P132;
+NET "cs_n" LOC = P1;
+NET "data_mask_high" LOC = P131;
+NET "data_mask_low" LOC = P114;
+NET "we_n" LOC = P115;
+NET "ras_n" LOC = P117;
+NET "V_SYNC" LOC = P27;
+NET "H_SYNC" LOC = P26;
+NET "bank_addr[0]" LOC = P2;
+NET "bank_addr[1]" LOC = P5;
+NET "addr[0]" LOC = P7;
+NET "addr[1]" LOC = P8;
+NET "addr[2]" LOC = P9;
+NET "addr[3]" LOC = P10;
+NET "addr[4]" LOC = P143;
+NET "addr[5]" LOC = P142;
+NET "addr[6]" LOC = P141;
+NET "addr[7]" LOC = P140;
+NET "addr[8]" LOC = P139;
+NET "addr[9]" LOC = P138;
+NET "addr[10]" LOC = P6;
+NET "addr[11]" LOC = P137;
+NET "addr[12]" LOC = P134;
+NET "data[0]" LOC = P100;
+NET "data[1]" LOC = P99;
+NET "data[2]" LOC = P102;
+NET "data[3]" LOC = P101;
+NET "data[4]" LOC = P104;
+NET "data[5]" LOC = P105;
+NET "data[6]" LOC = P111;
+NET "data[7]" LOC = P112;
+NET "data[8]" LOC = P127;
+NET "data[9]" LOC = P126;
+NET "data[10]" LOC = P124;
+NET "data[11]" LOC = P123;
+NET "data[12]" LOC = P121;
+NET "data[13]" LOC = P120;
+NET "data[14]" LOC = P119;
+NET "data[15]" LOC = P118;
+
+
+NET "RGB[15]" LOC = P29;
+NET "RGB[14]" LOC = P30;
+NET "RGB[13]" LOC = P32;
+NET "RGB[12]" LOC = P33;
+NET "RGB[11]" LOC = P34;
+NET "RGB[10]" LOC = P35;
+NET "RGB[9]" LOC = P40;
+NET "RGB[8]" LOC = P41;
+NET "RGB[7]" LOC = P43;
+NET "RGB[6]" LOC = P44;
+NET "RGB[5]" LOC = P45;
+NET "RGB[4]" LOC = P46;
+NET "RGB[3]" LOC = P47;
+NET "RGB[2]" LOC = P48;
+NET "RGB[1]" LOC = P50;
+NET "RGB[0]" LOC = P51;
+
+# PlanAhead Generated physical constraints 
+
+NET "rx" LOC = P14;

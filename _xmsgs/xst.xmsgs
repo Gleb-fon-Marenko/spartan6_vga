@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\14.7\ISE_DS\5-Example\vga\ipcore_dir\pll.v" Line 114: Assignment to <arg fmt="%s" index="1">clkout1_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\14.7\ISE_DS\5-Example\vga\ipcore_dir\pll.v" Line 115: Assignment to <arg fmt="%s" index="1">clkout2_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\14.7\ISE_DS\5-Example\vga\ipcore_dir\pll.v" Line 116: Assignment to <arg fmt="%s" index="1">clkout3_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\14.7\ISE_DS\5-Example\vga\ipcore_dir\pll.v" Line 117: Assignment to <arg fmt="%s" index="1">clkout4_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\14.7\ISE_DS\5-Example\vga\ipcore_dir\pll.v" Line 118: Assignment to <arg fmt="%s" index="1">clkout5_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\14.7\ISE_DS\5-Example\vga\ipcore_dir\pll.v" Line 119: Assignment to <arg fmt="%s" index="1">locked_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\14.7\ISE_DS\5-Example\vga\spartan6\top_sdram.v" Line 86: Assignment to <arg fmt="%s" index="1">busy</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\14.7\ISE_DS\5-Example\vga\spartan6\uart_rx.v" Line 80: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\14.7\ISE_DS\5-Example\vga\spartan6\uart_rx.v" Line 91: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\14.7\ISE_DS\5-Example\vga\spartan6\uart_rx.v" Line 102: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\14.7\ISE_DS\5-Example\vga\spartan6\uart_rx.v" Line 120: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\14.7\ISE_DS\5-Example\vga\spartan6\top_sdram.v" Line 148: Result of <arg fmt="%d" index="1">25</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">24</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\14.7\ISE_DS\5-Example\vga\spartan6\top_sdram.v" Line 156: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">24</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\14.7\ISE_DS\5-Example\vga\spartan6\top_sdram.v" Line 168: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">24</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\14.7\ISE_DS\5-Example\vga\spartan6\fifo.v" Line 27: Result of <arg fmt="%d" index="1">3</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\14.7\ISE_DS\5-Example\vga\spartan6\fifo.v" Line 28: Result of <arg fmt="%d" index="1">3</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\14.7\ISE_DS\5-Example\vga\spartan6\fifo.v" Line 37: Result of <arg fmt="%d" index="1">3</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\14.7\ISE_DS\5-Example\vga\spartan6\fifo.v" Line 38: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\14.7\ISE_DS\5-Example\vga\spartan6\fifo.v" Line 44: Result of <arg fmt="%d" index="1">3</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\14.7\ISE_DS\5-Example\vga\spartan6\fifo.v" Line 45: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\14.7\ISE_DS\5-Example\vga\spartan6\fifo.v" Line 53: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\14.7\ISE_DS\5-Example\vga\spartan6\fifo.v" Line 53: Assignment to <arg fmt="%s" index="1">read_pre</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\14.7\ISE_DS\5-Example\vga\spartan6\top_sdram.v" Line 199: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\14.7\ISE_DS\5-Example\vga\spartan6\VGA_SYNC.v" Line 26: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">11</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\14.7\ISE_DS\5-Example\vga\spartan6\VGA_SYNC.v" Line 27: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">11</arg>-bit target.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\14.7\ISE_DS\5-Example\vga\spartan6\top_sdram.v</arg>&quot; line <arg fmt="%s" index="2">75</arg>: Output port &lt;<arg fmt="%s" index="3">busy</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">contr</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">command_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">command_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">command_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">command_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">sdram_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">pll25_175/pll_base_inst</arg> in unit <arg fmt="%s" index="2">pll25_175/pll_base_inst</arg> of type <arg fmt="%s" index="3">PLL_BASE</arg> has been replaced by <arg fmt="%s" index="4">PLL_ADV</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">contr/busy</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_sdram</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">uart_rx/r_SM_Main_FSM_FFd1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top_sdram</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;uart_rx/r_Rx_DV&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">half_word_cnt_19</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top_sdram</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">8 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;half_word_cnt_15&gt; &lt;half_word_cnt_16&gt; &lt;half_word_cnt_17&gt; &lt;half_word_cnt_18&gt; &lt;half_word_cnt_20&gt; &lt;half_word_cnt_21&gt; &lt;half_word_cnt_22&gt; &lt;half_word_cnt_23&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+
