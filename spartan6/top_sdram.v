@@ -8,7 +8,7 @@ output clock_enable,cs_n,ras_n,cas_n,we_n,data_mask_low,data_mask_high,SDRAM_clk
  );
 
 parameter end_of_data=19221;
-parameter maxword=19223;    ///dfdf640*480/16-1   
+parameter maxword=19221;    ///dfdf640*480/16-1   
 parameter read_start=30;    //dddd
 
 
@@ -138,11 +138,11 @@ always@(posedge clk or negedge rst_n)
 	if(rst_n==0) half_word_cnt<=0;
 	else 
 	
-    if(cnt_mem_buf==1&&o_Rx_DV==1&&half_word_cnt>=end_of_data) 
+ //   if(cnt_mem_buf==1&&o_Rx_DV==1&&half_word_cnt>=end_of_data) 
 
-	half_word_cnt<=0;	
+//	half_word_cnt<=0;	
 	
-	else
+//	else
 	
 	if(cnt_mem_buf==1&&o_Rx_DV==1)
 	
@@ -166,8 +166,8 @@ wire  [15:0] data_out;
 reg [23:0]read_cnt; 
 always@(posedge clk or negedge rst_n)
 	if(rst_n==0) read_cnt<=maxword;
-		else if(/*(read_cnt==maxword&&rd_ready==1&&fifo_full==0)*/new_frame==1||half_word_cnt!=0) read_cnt<=maxword;//?
-			else if(half_word_cnt==0&&rd_ready==1&&fifo_full==0) read_cnt<=read_cnt-1;
+		else if(/*(read_cnt==maxword&&rd_ready==1&&fifo_full==0)*/new_frame==1) read_cnt<=maxword;//?
+			else if(half_word_cnt>maxword&&rd_ready==1&&fifo_full==0) read_cnt<=read_cnt-1;
 
  assign rd_addr=read_cnt;
 
@@ -206,7 +206,7 @@ assign re=bit_cnt[3:0]==0&&(fifo_empty==0)&&(en_from_vga==1);
 
 
 
-assign rd_enable=(half_word_cnt==0);
+assign rd_enable=(half_word_cnt>maxword);
 wire    [10:0] oCurrent_X,oCurrent_Y;
 
 wire RGB1;
@@ -223,7 +223,7 @@ assign en_from_vga=(en_from_vga_X==1)&&oCurrent_Y>0&&oCurrent_X>0||en_from_vga_X
 VGA_SYNC  vga(
 //vga connect
                   .CLK(clk),
-						.SYNC_RST_N(half_word_cnt==0),
+						.SYNC_RST_N(half_word_cnt>maxword),
 					   .H_SYNC_CLK(H_SYNC),//
 					   .V_SYNC_CLK(V_SYNC),//
 						.oCurrent_X(oCurrent_X),//

@@ -1,7 +1,7 @@
 #Release 14.7 - par P.20131013 (nt64)
 #Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-#Fri Nov 24 22:10:10 2017
+#Sat Nov 25 01:24:43 2017
 
 #
 ## NOTE: This file is designed to be imported into a spreadsheet program
@@ -116,7 +116,7 @@ P94,,IOBS,IO_L40N_GCLK10_1,UNUSED,,1,,,,,,,,,
 P95,,IOBM,IO_L40P_GCLK11_1,UNUSED,,1,,,,,,,,,
 P96,,,GND,,,,,,,,,,,,
 P97,,IOBS,IO_L34N_1,UNUSED,,1,,,,,,,,,
-P98,,IOBM,IO_L34P_1,UNUSED,,1,,,,,,,,,
+P98,cnt_status,IOB,IO_L34P_1,OUTPUT,LVCMOS25*,1,12,SLOW,,,,UNLOCATED,NO,NONE,
 P99,data<1>,IOB,IO_L33N_1,BIDIR,LVCMOS25*,1,12,SLOW,,NONE,,LOCATED,NO,NONE,
 P100,data<0>,IOB,IO_L33P_1,BIDIR,LVCMOS25*,1,12,SLOW,,NONE,,LOCATED,NO,NONE,
 P101,data<3>,IOB,IO_L32N_1,BIDIR,LVCMOS25*,1,12,SLOW,,NONE,,LOCATED,NO,NONE,
@@ -162,7 +162,7 @@ P140,addr<7>,IOB,IO_L3P_0,OUTPUT,LVCMOS25*,0,12,SLOW,,,,LOCATED,NO,NONE,
 P141,addr<6>,IOB,IO_L2N_0,OUTPUT,LVCMOS25*,0,12,SLOW,,,,LOCATED,NO,NONE,
 P142,addr<5>,IOB,IO_L2P_0,OUTPUT,LVCMOS25*,0,12,SLOW,,,,LOCATED,NO,NONE,
 P143,addr<4>,IOB,IO_L1N_VREF_0,OUTPUT,LVCMOS25*,0,12,SLOW,,,,LOCATED,NO,NONE,
-P144,cnt_status,IOB,IO_L1P_HSWAPEN_0,OUTPUT,LVCMOS25*,0,12,SLOW,,,,UNLOCATED,NO,NONE,
+P144,,IOBM,IO_L1P_HSWAPEN_0,UNUSED,,0,,,,,,,,,
 
 # -----,-----,-----,-----,-----,-----,-----,-----,-----,-----,-----,-----,-----,-----,-----,
 # 
