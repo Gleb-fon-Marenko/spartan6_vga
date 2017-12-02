@@ -37,24 +37,8 @@ Setup/Hold to clock clk48
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-data<0>     |    2.344(R)|      SLOW  |   -1.391(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-data<1>     |    2.326(R)|      SLOW  |   -1.372(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-data<2>     |    2.235(R)|      SLOW  |   -1.324(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-data<3>     |    2.344(R)|      SLOW  |   -1.401(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-data<4>     |    2.382(R)|      SLOW  |   -1.418(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-data<5>     |    2.380(R)|      SLOW  |   -1.381(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-data<6>     |    2.468(R)|      SLOW  |   -1.490(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-data<7>     |    2.585(R)|      SLOW  |   -1.555(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-data<8>     |    2.698(R)|      SLOW  |   -1.646(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-data<9>     |    2.542(R)|      SLOW  |   -1.568(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-data<10>    |    2.684(R)|      SLOW  |   -1.549(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-data<11>    |    2.277(R)|      SLOW  |   -1.339(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-data<12>    |    2.407(R)|      SLOW  |   -1.432(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-data<13>    |    2.316(R)|      SLOW  |   -1.363(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-data<14>    |    2.795(R)|      SLOW  |   -1.728(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-data<15>    |    2.525(R)|      SLOW  |   -1.542(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-rst_n       |    6.890(R)|      SLOW  |   -1.665(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-rx          |    3.431(R)|      SLOW  |   -2.127(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+rst_n       |    6.467(R)|      SLOW  |   -1.624(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+rx          |    1.599(R)|      SLOW  |   -0.929(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock clk48 to Pad
@@ -62,60 +46,60 @@ Clock clk48 to Pad
               |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination   |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 --------------+-----------------+------------+-----------------+------------+------------------+--------+
-H_SYNC        |         5.853(R)|      SLOW  |         3.447(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-RGB<0>        |        12.223(R)|      SLOW  |         5.807(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-RGB<1>        |        11.980(R)|      SLOW  |         5.640(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-RGB<2>        |        12.722(R)|      SLOW  |         6.072(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-RGB<3>        |        12.517(R)|      SLOW  |         5.964(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-RGB<4>        |        12.752(R)|      SLOW  |         6.131(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-RGB<5>        |        12.691(R)|      SLOW  |         6.093(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-RGB<6>        |        13.149(R)|      SLOW  |         6.371(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-RGB<7>        |        12.944(R)|      SLOW  |         6.263(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-RGB<8>        |        13.163(R)|      SLOW  |         6.388(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-RGB<9>        |        13.330(R)|      SLOW  |         6.517(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-RGB<10>       |        13.516(R)|      SLOW  |         6.563(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-RGB<11>       |        13.685(R)|      SLOW  |         6.690(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-RGB<12>       |        13.638(R)|      SLOW  |         6.655(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-RGB<13>       |        13.477(R)|      SLOW  |         6.558(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-RGB<14>       |        10.006(R)|      SLOW  |         4.376(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-RGB<15>       |        10.015(R)|      SLOW  |         4.385(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-addr<0>       |         8.350(R)|      SLOW  |         3.535(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-addr<1>       |         8.508(R)|      SLOW  |         3.448(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-addr<2>       |         8.173(R)|      SLOW  |         3.462(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-addr<3>       |         8.198(R)|      SLOW  |         3.223(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-addr<4>       |         7.848(R)|      SLOW  |         3.812(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-addr<5>       |         7.757(R)|      SLOW  |         3.706(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-addr<6>       |         8.172(R)|      SLOW  |         3.874(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-addr<7>       |         8.347(R)|      SLOW  |         3.637(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-addr<8>       |         8.453(R)|      SLOW  |         3.722(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-addr<9>       |         6.577(R)|      SLOW  |         3.328(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-addr<10>      |         6.970(R)|      SLOW  |         3.508(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-addr<11>      |         6.503(R)|      SLOW  |         3.303(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-addr<12>      |         6.457(R)|      SLOW  |         3.429(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-bank_addr<0>  |         6.707(R)|      SLOW  |         3.260(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-bank_addr<1>  |         6.670(R)|      SLOW  |         3.369(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-cas_n         |         6.001(R)|      SLOW  |         3.613(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-cnt_status    |         7.687(R)|      SLOW  |         3.920(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-data<0>       |         7.926(R)|      SLOW  |         3.044(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-data<1>       |         7.926(R)|      SLOW  |         2.948(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-data<2>       |         7.759(R)|      SLOW  |         3.109(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-data<3>       |         7.759(R)|      SLOW  |         3.044(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-data<4>       |         7.523(R)|      SLOW  |         3.043(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-data<5>       |         7.523(R)|      SLOW  |         3.116(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-data<6>       |         7.859(R)|      SLOW  |         3.139(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-data<7>       |         7.998(R)|      SLOW  |         3.140(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-data<8>       |         6.270(R)|      SLOW  |         2.919(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-data<9>       |         6.270(R)|      SLOW  |         2.928(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-data<10>      |         6.569(R)|      SLOW  |         2.975(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-data<11>      |         6.569(R)|      SLOW  |         2.961(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-data<12>      |         6.799(R)|      SLOW  |         3.192(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-data<13>      |         6.799(R)|      SLOW  |         3.167(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-data<14>      |         7.379(R)|      SLOW  |         3.505(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-data<15>      |         7.379(R)|      SLOW  |         3.379(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-data_mask_high|         6.787(R)|      SLOW  |         4.164(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-data_mask_low |         7.225(R)|      SLOW  |         4.304(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-ras_n         |         5.937(R)|      SLOW  |         3.608(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
-we_n          |         5.970(R)|      SLOW  |         3.602(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+H_SYNC        |         5.804(R)|      SLOW  |         3.355(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+RGB<0>        |        15.203(R)|      SLOW  |         5.289(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+RGB<1>        |        14.929(R)|      SLOW  |         5.117(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+RGB<2>        |        14.775(R)|      SLOW  |         5.024(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+RGB<3>        |        14.640(R)|      SLOW  |         4.956(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+RGB<4>        |        14.664(R)|      SLOW  |         4.977(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+RGB<5>        |        14.513(R)|      SLOW  |         4.893(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+RGB<6>        |        15.229(R)|      SLOW  |         5.363(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+RGB<7>        |        15.024(R)|      SLOW  |         5.255(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+RGB<8>        |        15.243(R)|      SLOW  |         5.380(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+RGB<9>        |        15.410(R)|      SLOW  |         5.509(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+RGB<10>       |        15.093(R)|      SLOW  |         5.228(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+RGB<11>       |        14.932(R)|      SLOW  |         5.131(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+RGB<12>       |        15.073(R)|      SLOW  |         5.208(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+RGB<13>       |        14.912(R)|      SLOW  |         5.111(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+RGB<14>       |        12.766(R)|      SLOW  |         3.746(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+RGB<15>       |        12.775(R)|      SLOW  |         3.755(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+addr<0>       |         8.242(R)|      SLOW  |         3.613(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+addr<1>       |         8.294(R)|      SLOW  |         3.188(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+addr<2>       |         8.478(R)|      SLOW  |         3.563(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+addr<3>       |         8.613(R)|      SLOW  |         3.565(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+addr<4>       |         8.436(R)|      SLOW  |         3.647(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+addr<5>       |         8.734(R)|      SLOW  |         3.865(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+addr<6>       |         8.532(R)|      SLOW  |         3.591(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+addr<7>       |         8.538(R)|      SLOW  |         3.844(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+addr<8>       |         8.251(R)|      SLOW  |         3.831(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+addr<9>       |         7.530(R)|      SLOW  |         3.901(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+addr<10>      |         8.799(R)|      SLOW  |         4.020(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+addr<11>      |         7.250(R)|      SLOW  |         3.831(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+addr<12>      |         7.695(R)|      SLOW  |         3.776(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+bank_addr<0>  |         7.307(R)|      SLOW  |         3.753(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+bank_addr<1>  |         7.071(R)|      SLOW  |         3.413(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+cas_n         |         5.411(R)|      SLOW  |         3.181(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+cnt_status    |         7.623(R)|      SLOW  |         3.668(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+data<0>       |         8.510(R)|      SLOW  |         2.854(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+data<1>       |         8.510(R)|      SLOW  |         2.740(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+data<2>       |         8.343(R)|      SLOW  |         2.918(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+data<3>       |         8.343(R)|      SLOW  |         2.837(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+data<4>       |         7.951(R)|      SLOW  |         2.769(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+data<5>       |         7.951(R)|      SLOW  |         2.865(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+data<6>       |         7.976(R)|      SLOW  |         2.901(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+data<7>       |         8.032(R)|      SLOW  |         3.030(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+data<8>       |         6.626(R)|      SLOW  |         2.930(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+data<9>       |         6.626(R)|      SLOW  |         2.929(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+data<10>      |         6.659(R)|      SLOW  |         3.012(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+data<11>      |         6.659(R)|      SLOW  |         2.961(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+data<12>      |         7.157(R)|      SLOW  |         2.879(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+data<13>      |         7.157(R)|      SLOW  |         2.996(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+data<14>      |         7.746(R)|      SLOW  |         3.226(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+data<15>      |         7.746(R)|      SLOW  |         3.176(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+data_mask_high|         6.843(R)|      SLOW  |         3.782(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+data_mask_low |         7.783(R)|      SLOW  |         4.413(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+ras_n         |         5.507(R)|      SLOW  |         3.224(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
+we_n          |         5.439(R)|      SLOW  |         3.197(R)|      FAST  |SDRAM_clk_OBUF    |   0.000|
 --------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk48
@@ -123,25 +107,25 @@ Clock to Setup on destination clock clk48
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk48          |    6.512|         |         |         |
+clk48          |    6.914|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-clk48          |SDRAM_clk      |    4.562|
+clk48          |SDRAM_clk      |    4.561|
 ---------------+---------------+---------+
 
 
-Analysis completed Sat Nov 25 01:24:48 2017 
+Analysis completed Tue Nov 28 00:45:29 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 220 MB
+Peak Memory Usage: 223 MB
 
 
 

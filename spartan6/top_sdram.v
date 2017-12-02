@@ -8,9 +8,9 @@ output clock_enable,cs_n,ras_n,cas_n,we_n,data_mask_low,data_mask_high,SDRAM_clk
  );
 
 parameter end_of_data=19221;
-parameter maxword=19221;    ///dfdf640*480/16-1   
+parameter maxword=19219;    ///dfdf640*480/16-1   
 parameter read_start=30;    //dddd
-
+parameter end_of_all=38462;
 
 
 
@@ -35,9 +35,86 @@ wire                     busy;
 //reg                      rst_n;
 wire                      clk;
 reg                     V_SYNC_pre,en_from_vga_X_pre;
-wire                    new_frame;
+wire                    new_frame,oSYNC_COLOR;
+
+
+wire new_frame1;
+
+reg [7:0]sdwig ;
+
+always@(posedge clk)
+if(o_Rx_DV==1)
+sdwig<=o_Rx_Byte;
+
 
 pll pll25_175(clk48,clk);
+
+wire DV;
+wire [7:0]data_from_uart,q;
+reg [15:0]cnt_w,cnt_r;
+//assign DV2=!DV;
+always@(posedge clk or negedge rst_n )
+if(rst_n==0) cnt_w<=0;
+else if( cnt_w!=end_of_all && DV==1 ) cnt_w<=cnt_w+1;
+
+always@(posedge clk or negedge rst_n )
+if(rst_n==0) cnt_r<=end_of_all;
+else if(new_frame==1 ) cnt_r<=end_of_all;
+else
+if(re==1&&bit==0) cnt_r<=cnt_r-1;
+
+reg [2:0]bit;
+
+always@(posedge clk or negedge rst_n )
+if(rst_n==0) bit<=7;
+else if( new_frame==1 ) bit<=7;
+else
+if(re==1) bit<=bit-1;
+
+
+ 
+uart_rx #(218) uart ////25170000/115200
+  (
+   clk,
+   rx,
+   DV,
+   data_from_uart
+   );
+	
+	
+
+ ram ram8(
+  clk,
+  DV,
+  cnt_w,
+  data_from_uart,
+  clk,
+  cnt_r,
+  q
+);
+
+
+
+//wire [10:0]oCurrent_X,oCurrent_Y;
+//wire oSYNC_COLOR;
+wire SYNC_RST_N;
+assign SYNC_RST_N= (cnt_w>=end_of_all);
+
+//reg V_SYNC_pre;
+always@ (posedge clk  )
+V_SYNC_pre<=V_SYNC;
+
+//wire new_frame;
+
+assign new_frame=V_SYNC_pre==0&&V_SYNC==1&&oCurrent_Y==0;
+
+assign re=(oSYNC_COLOR&&(oCurrent_Y>0)&&(oCurrent_X>0))||(H_SYNC==0&&H_SYNC_p==1);
+
+reg H_SYNC_p;
+always @(posedge clk)
+H_SYNC_p<=H_SYNC;
+
+
 
 
 assign SDRAM_clk=clk;
@@ -53,11 +130,8 @@ wire                     cas_n;
 wire                     we_n;
 wire                     data_mask_low;
 wire                     data_mask_high;
-
 wire [3:0] Dqm;
-
 assign Dqm={1'b1,1'b1,data_mask_high,data_mask_low};
-
 mt48lc2m32b2 sdram (
  
  .Dq(data),
@@ -159,14 +233,14 @@ assign wr_addr=half_word_cnt-1;
 
 assign wr_enable=(half_word_cnt>0&&cnt_mem_buf==0);
 //////////////////////////////////////
-wire   we,re,fifo_empty,fifo_full;
+wire   we,re1,fifo_empty,fifo_full;
  
 wire  [15:0] data_out; 
  
 reg [23:0]read_cnt; 
 always@(posedge clk or negedge rst_n)
 	if(rst_n==0) read_cnt<=maxword;
-		else if(/*(read_cnt==maxword&&rd_ready==1&&fifo_full==0)*/new_frame==1) read_cnt<=maxword;//?
+		else if(/*(read_cnt==maxword&&rd_ready==1&&fifo_full==0)*/new_frame1==1) read_cnt<=maxword;//+sdwig;//?
 			else if(half_word_cnt>maxword&&rd_ready==1&&fifo_full==0) read_cnt<=read_cnt-1;
 
  assign rd_addr=read_cnt;
@@ -178,7 +252,7 @@ fifo #(16) fifo_to_vga(
 .clk(clk),
 .reset(rst_n),
 .we((rd_ready==1)&&(fifo_full==0)),
-.re(re), 
+.re(re1), 
 .data_out(data_out) , 
 .fifo_empty(fifo_empty),
 .fifo_full(fifo_full)
@@ -197,11 +271,11 @@ reg [3:0]bit_cnt;
  
 always@(posedge clk or negedge rst_n)
 if(rst_n==0) bit_cnt<=15;
-else if(new_frame==1) bit_cnt<=15;
+else if(new_frame1==1) bit_cnt<=15;
 else if(en_from_vga==1) bit_cnt<=bit_cnt-1;
 
 
-assign re=bit_cnt[3:0]==0&&(fifo_empty==0)&&(en_from_vga==1);
+assign re1=bit_cnt[3:0]==0&&(fifo_empty==0)&&(en_from_vga==1);
 
 
 
@@ -211,8 +285,8 @@ wire    [10:0] oCurrent_X,oCurrent_Y;
 
 wire RGB1;
 assign RGB1=data_out[bit_cnt[3:0]];
-
-assign RGB= RGB1? 16'hFFFF:16'h0000;
+assign RGB=  re?q[bit]*16'hFFFF:0;
+//assign RGB= rgb/*RGB1&&en_from_vga*/? 16'hFFFF:16'h0000;
 
 
 wire en_from_vga_X;
@@ -223,21 +297,21 @@ assign en_from_vga=(en_from_vga_X==1)&&oCurrent_Y>0&&oCurrent_X>0||en_from_vga_X
 VGA_SYNC  vga(
 //vga connect
                   .CLK(clk),
-						.SYNC_RST_N(half_word_cnt>maxword),
+						.SYNC_RST_N(SYNC_RST_N),
 					   .H_SYNC_CLK(H_SYNC),//
 					   .V_SYNC_CLK(V_SYNC),//
 						.oCurrent_X(oCurrent_X),//
 						.oCurrent_Y(oCurrent_Y),//10
 					   .oSYNC_COLOR(en_from_vga_X)//1
 );
-
+assign oSYNC_COLOR=en_from_vga_X;
 always@(posedge clk)
 	V_SYNC_pre<=V_SYNC;
 	
 always@(posedge clk)
 	en_from_vga_X_pre<=en_from_vga_X;	
 	
-assign new_frame=V_SYNC==1&&V_SYNC_pre==0&&oCurrent_Y==0; 
+assign new_frame1=V_SYNC==1&&V_SYNC_pre==0&&oCurrent_Y==0; 
 
 /////////////////////////////////////////////////	
 //initial 

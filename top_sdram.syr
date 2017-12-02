@@ -123,6 +123,8 @@ Analyzing Verilog file "D:\14.7\ISE_DS\5-Example\vga\spartan6\sdram_controller.v
 Parsing module <sdram_controller>.
 Analyzing Verilog file "D:\14.7\ISE_DS\5-Example\vga\spartan6\fifo.v" into library work
 Parsing module <fifo>.
+Analyzing Verilog file "D:\14.7\ISE_DS\5-Example\vga\ipcore_dir\ram.v" into library work
+Parsing module <ram>.
 Analyzing Verilog file "D:\14.7\ISE_DS\5-Example\vga\spartan6\top_sdram.v" into library work
 Parsing module <top_sdram>.
 
@@ -131,6 +133,7 @@ Parsing module <top_sdram>.
 =========================================================================
 
 Elaborating module <top_sdram>.
+WARNING:HDLCompiler:1127 - "D:\14.7\ISE_DS\5-Example\vga\spartan6\top_sdram.v" Line 45: Assignment to sdwig ignored, since the identifier is never used
 
 Elaborating module <pll>.
 
@@ -145,18 +148,24 @@ WARNING:HDLCompiler:1127 - "D:\14.7\ISE_DS\5-Example\vga\ipcore_dir\pll.v" Line 
 WARNING:HDLCompiler:1127 - "D:\14.7\ISE_DS\5-Example\vga\ipcore_dir\pll.v" Line 119: Assignment to locked_unused ignored, since the identifier is never used
 
 Elaborating module <BUFG>.
-
-Elaborating module <sdram_controller>.
-WARNING:HDLCompiler:1127 - "D:\14.7\ISE_DS\5-Example\vga\spartan6\top_sdram.v" Line 88: Assignment to busy ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "D:\14.7\ISE_DS\5-Example\vga\spartan6\top_sdram.v" Line 58: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "D:\14.7\ISE_DS\5-Example\vga\spartan6\top_sdram.v" Line 64: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "D:\14.7\ISE_DS\5-Example\vga\spartan6\top_sdram.v" Line 72: Result of 32-bit expression is truncated to fit in 3-bit target.
 
 Elaborating module <uart_rx(CLKS_PER_BIT=218)>.
 WARNING:HDLCompiler:413 - "D:\14.7\ISE_DS\5-Example\vga\spartan6\uart_rx.v" Line 80: Result of 9-bit expression is truncated to fit in 8-bit target.
 WARNING:HDLCompiler:413 - "D:\14.7\ISE_DS\5-Example\vga\spartan6\uart_rx.v" Line 91: Result of 9-bit expression is truncated to fit in 8-bit target.
 WARNING:HDLCompiler:413 - "D:\14.7\ISE_DS\5-Example\vga\spartan6\uart_rx.v" Line 102: Result of 4-bit expression is truncated to fit in 3-bit target.
 WARNING:HDLCompiler:413 - "D:\14.7\ISE_DS\5-Example\vga\spartan6\uart_rx.v" Line 120: Result of 9-bit expression is truncated to fit in 8-bit target.
-WARNING:HDLCompiler:413 - "D:\14.7\ISE_DS\5-Example\vga\spartan6\top_sdram.v" Line 150: Result of 25-bit expression is truncated to fit in 24-bit target.
-WARNING:HDLCompiler:413 - "D:\14.7\ISE_DS\5-Example\vga\spartan6\top_sdram.v" Line 158: Result of 32-bit expression is truncated to fit in 24-bit target.
-WARNING:HDLCompiler:413 - "D:\14.7\ISE_DS\5-Example\vga\spartan6\top_sdram.v" Line 170: Result of 32-bit expression is truncated to fit in 24-bit target.
+
+Elaborating module <ram>.
+WARNING:HDLCompiler:1499 - "D:\14.7\ISE_DS\5-Example\vga\ipcore_dir\ram.v" Line 39: Empty module <ram> remains a black box.
+
+Elaborating module <sdram_controller>.
+WARNING:HDLCompiler:1127 - "D:\14.7\ISE_DS\5-Example\vga\spartan6\top_sdram.v" Line 162: Assignment to busy ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "D:\14.7\ISE_DS\5-Example\vga\spartan6\top_sdram.v" Line 224: Result of 25-bit expression is truncated to fit in 24-bit target.
+WARNING:HDLCompiler:413 - "D:\14.7\ISE_DS\5-Example\vga\spartan6\top_sdram.v" Line 232: Result of 32-bit expression is truncated to fit in 24-bit target.
+WARNING:HDLCompiler:413 - "D:\14.7\ISE_DS\5-Example\vga\spartan6\top_sdram.v" Line 244: Result of 32-bit expression is truncated to fit in 24-bit target.
 
 Elaborating module <fifo(w=16)>.
 WARNING:HDLCompiler:413 - "D:\14.7\ISE_DS\5-Example\vga\spartan6\fifo.v" Line 27: Result of 3-bit expression is truncated to fit in 2-bit target.
@@ -167,7 +176,9 @@ WARNING:HDLCompiler:413 - "D:\14.7\ISE_DS\5-Example\vga\spartan6\fifo.v" Line 44
 WARNING:HDLCompiler:413 - "D:\14.7\ISE_DS\5-Example\vga\spartan6\fifo.v" Line 45: Result of 32-bit expression is truncated to fit in 3-bit target.
 WARNING:HDLCompiler:413 - "D:\14.7\ISE_DS\5-Example\vga\spartan6\fifo.v" Line 53: Result of 32-bit expression is truncated to fit in 2-bit target.
 WARNING:HDLCompiler:1127 - "D:\14.7\ISE_DS\5-Example\vga\spartan6\fifo.v" Line 53: Assignment to read_pre ignored, since the identifier is never used
-WARNING:HDLCompiler:413 - "D:\14.7\ISE_DS\5-Example\vga\spartan6\top_sdram.v" Line 201: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\14.7\ISE_DS\5-Example\vga\spartan6\top_sdram.v" Line 275: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:1127 - "D:\14.7\ISE_DS\5-Example\vga\spartan6\top_sdram.v" Line 287: Assignment to RGB1 ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "D:\14.7\ISE_DS\5-Example\vga\spartan6\top_sdram.v" Line 288: Result of 32-bit expression is truncated to fit in 16-bit target.
 
 Elaborating module <VGA_SYNC>.
 WARNING:HDLCompiler:413 - "D:\14.7\ISE_DS\5-Example\vga\spartan6\VGA_SYNC.v" Line 26: Result of 32-bit expression is truncated to fit in 11-bit target.
@@ -180,36 +191,48 @@ WARNING:HDLCompiler:413 - "D:\14.7\ISE_DS\5-Example\vga\spartan6\VGA_SYNC.v" Lin
 Synthesizing Unit <top_sdram>.
     Related source file is "D:\14.7\ISE_DS\5-Example\vga\spartan6\top_sdram.v".
         end_of_data = 19221
-        maxword = 19221
+        maxword = 19219
         read_start = 30
+        end_of_all = 38462
         ROW_WIDTH = 13
         COL_WIDTH = 9
         BANK_WIDTH = 2
         SDRADDR_WIDTH = 13
         HADDR_WIDTH = 24
-INFO:Xst:3210 - "D:\14.7\ISE_DS\5-Example\vga\spartan6\top_sdram.v" line 77: Output port <busy> of the instance <contr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\14.7\ISE_DS\5-Example\vga\spartan6\top_sdram.v" line 151: Output port <busy> of the instance <contr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\14.7\ISE_DS\5-Example\vga\spartan6\top_sdram.v" line 250: Output port <data_out> of the instance <fifo_to_vga> is unconnected or connected to loadless signal.
     Found 1-bit register for signal <cnt_mem_buf>.
     Found 4-bit register for signal <bit_cnt>.
+    Found 3-bit register for signal <bit>.
+    Found 16-bit register for signal <cnt_w>.
     Found 8-bit register for signal <mem_buf_L>.
     Found 8-bit register for signal <mem_buf_H>.
     Found 24-bit register for signal <half_word_cnt>.
     Found 24-bit register for signal <read_cnt>.
+    Found 16-bit register for signal <cnt_r>.
     Found 1-bit register for signal <V_SYNC_pre>.
+    Found 1-bit register for signal <H_SYNC_p>.
     Found 1-bit register for signal <en_from_vga_X_pre>.
-    Found 24-bit adder for signal <half_word_cnt[23]_GND_1_o_add_16_OUT> created at line 150.
+    Found 16-bit adder for signal <cnt_w[15]_GND_1_o_add_7_OUT> created at line 58.
+    Found 24-bit adder for signal <half_word_cnt[23]_GND_1_o_add_51_OUT> created at line 224.
+    Found 16-bit subtractor for signal <GND_1_o_GND_1_o_sub_15_OUT<15:0>> created at line 64.
+    Found 3-bit subtractor for signal <GND_1_o_GND_1_o_sub_22_OUT<2:0>> created at line 72.
     Found 24-bit subtractor for signal <wr_addr> created at line 25.
-    Found 24-bit subtractor for signal <GND_1_o_GND_1_o_sub_29_OUT<23:0>> created at line 170.
-    Found 4-bit subtractor for signal <GND_1_o_GND_1_o_sub_39_OUT<3:0>> created at line 201.
-    Found 1-bit 16-to-1 multiplexer for signal <RGB1> created at line 213.
-    Found 24-bit comparator greater for signal <GND_1_o_half_word_cnt[23]_LessThan_22_o> created at line 160
-    Found 11-bit comparator greater for signal <GND_1_o_oCurrent_Y[10]_LessThan_50_o> created at line 219
-    Found 11-bit comparator greater for signal <GND_1_o_oCurrent_X[10]_LessThan_51_o> created at line 219
-    Found 24-bit comparator greater for signal <rd_enable> created at line 226
+    Found 24-bit subtractor for signal <GND_1_o_GND_1_o_sub_64_OUT<23:0>> created at line 244.
+    Found 4-bit subtractor for signal <GND_1_o_GND_1_o_sub_74_OUT<3:0>> created at line 275.
+    Found 1x16-bit multiplier for signal <bit[2]_PWR_1_o_MuLt_83_OUT> created at line 288.
+    Found 1-bit 8-to-1 multiplexer for signal <bit[2]_q[7]_Mux_82_o> created at line 288.
+    Found 16-bit comparator lessequal for signal <n0020> created at line 101
+    Found 11-bit comparator greater for signal <GND_1_o_oCurrent_Y[10]_LessThan_31_o> created at line 111
+    Found 11-bit comparator greater for signal <GND_1_o_oCurrent_X[10]_LessThan_32_o> created at line 111
+    Found 24-bit comparator greater for signal <GND_1_o_half_word_cnt[23]_LessThan_57_o> created at line 234
+    Found 24-bit comparator greater for signal <rd_enable> created at line 283
     Summary:
-	inferred   4 Adder/Subtractor(s).
-	inferred  71 D-type flip-flop(s).
-	inferred   4 Comparator(s).
-	inferred   3 Multiplexer(s).
+	inferred   1 Multiplier(s).
+	inferred   7 Adder/Subtractor(s).
+	inferred 107 D-type flip-flop(s).
+	inferred   5 Comparator(s).
+	inferred   6 Multiplexer(s).
 Unit <top_sdram> synthesized.
 
 Synthesizing Unit <pll>.
@@ -217,6 +240,46 @@ Synthesizing Unit <pll>.
     Summary:
 	no macro.
 Unit <pll> synthesized.
+
+Synthesizing Unit <uart_rx>.
+    Related source file is "D:\14.7\ISE_DS\5-Example\vga\spartan6\uart_rx.v".
+        CLKS_PER_BIT = 218
+    Found 1-bit register for signal <r_Rx_Data>.
+    Found 3-bit register for signal <r_SM_Main>.
+    Found 1-bit register for signal <r_Rx_DV>.
+    Found 8-bit register for signal <r_Clock_Count>.
+    Found 1-bit register for signal <r_Rx_Byte<7>>.
+    Found 1-bit register for signal <r_Rx_Byte<6>>.
+    Found 1-bit register for signal <r_Rx_Byte<5>>.
+    Found 1-bit register for signal <r_Rx_Byte<4>>.
+    Found 1-bit register for signal <r_Rx_Byte<3>>.
+    Found 1-bit register for signal <r_Rx_Byte<2>>.
+    Found 1-bit register for signal <r_Rx_Byte<1>>.
+    Found 1-bit register for signal <r_Rx_Byte<0>>.
+    Found 3-bit register for signal <r_Bit_Index>.
+    Found 1-bit register for signal <r_Rx_Data_R>.
+    Found finite state machine <FSM_0> for signal <r_SM_Main>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 4                                              |
+    | Clock              | i_Clock (rising_edge)                          |
+    | Power Up State     | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit adder for signal <r_Bit_Index[2]_GND_6_o_add_15_OUT> created at line 102.
+    Found 8-bit adder for signal <r_Clock_Count[7]_GND_6_o_add_23_OUT> created at line 120.
+    Found 3-bit comparator greater for signal <r_Bit_Index[2]_PWR_8_o_LessThan_15_o> created at line 100
+    Found 8-bit comparator greater for signal <r_Clock_Count[7]_PWR_8_o_LessThan_23_o> created at line 118
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  22 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   6 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <uart_rx> synthesized.
 
 Synthesizing Unit <sdram_controller>.
     Related source file is "D:\14.7\ISE_DS\5-Example\vga\spartan6\sdram_controller.v".
@@ -237,7 +300,7 @@ Synthesizing Unit <sdram_controller>.
     Found 1-bit register for signal <rd_ready_r>.
     Found 10-bit register for signal <refresh_cnt>.
     Found 5-bit register for signal <state>.
-    Found finite state machine <FSM_0> for signal <state>.
+    Found finite state machine <FSM_1> for signal <state>.
     -----------------------------------------------------------------------
     | States             | 23                                             |
     | Transitions        | 71                                             |
@@ -247,8 +310,8 @@ Synthesizing Unit <sdram_controller>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 4-bit subtractor for signal <state_cnt[3]_GND_6_o_sub_10_OUT> created at line 193.
-    Found 10-bit adder for signal <refresh_cnt[9]_GND_6_o_add_30_OUT> created at line 223.
+    Found 4-bit subtractor for signal <state_cnt[3]_GND_8_o_sub_10_OUT> created at line 193.
+    Found 10-bit adder for signal <refresh_cnt[9]_GND_8_o_add_30_OUT> created at line 223.
     Found 1-bit tristate buffer for signal <data<15>> created at line 167
     Found 1-bit tristate buffer for signal <data<14>> created at line 167
     Found 1-bit tristate buffer for signal <data<13>> created at line 167
@@ -270,50 +333,10 @@ Synthesizing Unit <sdram_controller>.
 	inferred   2 Adder/Subtractor(s).
 	inferred  80 D-type flip-flop(s).
 	inferred   1 Comparator(s).
-	inferred  12 Multiplexer(s).
+	inferred  14 Multiplexer(s).
 	inferred  16 Tristate(s).
 	inferred   1 Finite State Machine(s).
 Unit <sdram_controller> synthesized.
-
-Synthesizing Unit <uart_rx>.
-    Related source file is "D:\14.7\ISE_DS\5-Example\vga\spartan6\uart_rx.v".
-        CLKS_PER_BIT = 218
-    Found 1-bit register for signal <r_Rx_Data>.
-    Found 3-bit register for signal <r_SM_Main>.
-    Found 1-bit register for signal <r_Rx_DV>.
-    Found 8-bit register for signal <r_Clock_Count>.
-    Found 1-bit register for signal <r_Rx_Byte<7>>.
-    Found 1-bit register for signal <r_Rx_Byte<6>>.
-    Found 1-bit register for signal <r_Rx_Byte<5>>.
-    Found 1-bit register for signal <r_Rx_Byte<4>>.
-    Found 1-bit register for signal <r_Rx_Byte<3>>.
-    Found 1-bit register for signal <r_Rx_Byte<2>>.
-    Found 1-bit register for signal <r_Rx_Byte<1>>.
-    Found 1-bit register for signal <r_Rx_Byte<0>>.
-    Found 3-bit register for signal <r_Bit_Index>.
-    Found 1-bit register for signal <r_Rx_Data_R>.
-    Found finite state machine <FSM_1> for signal <r_SM_Main>.
-    -----------------------------------------------------------------------
-    | States             | 5                                              |
-    | Transitions        | 11                                             |
-    | Inputs             | 4                                              |
-    | Outputs            | 4                                              |
-    | Clock              | i_Clock (rising_edge)                          |
-    | Power Up State     | 000                                            |
-    | Encoding           | auto                                           |
-    | Implementation     | LUT                                            |
-    -----------------------------------------------------------------------
-    Found 3-bit adder for signal <r_Bit_Index[2]_GND_23_o_add_15_OUT> created at line 102.
-    Found 8-bit adder for signal <r_Clock_Count[7]_GND_23_o_add_23_OUT> created at line 120.
-    Found 3-bit comparator greater for signal <r_Bit_Index[2]_PWR_8_o_LessThan_15_o> created at line 100
-    Found 8-bit comparator greater for signal <r_Clock_Count[7]_PWR_8_o_LessThan_23_o> created at line 118
-    Summary:
-	inferred   2 Adder/Subtractor(s).
-	inferred  22 D-type flip-flop(s).
-	inferred   2 Comparator(s).
-	inferred   6 Multiplexer(s).
-	inferred   1 Finite State Machine(s).
-Unit <uart_rx> synthesized.
 
 Synthesizing Unit <fifo>.
     Related source file is "D:\14.7\ISE_DS\5-Example\vga\spartan6\fifo.v".
@@ -322,10 +345,10 @@ Synthesizing Unit <fifo>.
     Found 2-bit register for signal <write_pointer>.
     Found 64-bit register for signal <n0030[63:0]>.
     Found 3-bit register for signal <cnt>.
-    Found 2-bit adder for signal <write_pointer[1]_GND_24_o_add_8_OUT> created at line 37.
-    Found 3-bit adder for signal <cnt[2]_GND_24_o_add_9_OUT> created at line 38.
-    Found 2-bit adder for signal <read_pointer[1]_GND_24_o_add_13_OUT> created at line 44.
-    Found 3-bit subtractor for signal <GND_24_o_GND_24_o_sub_15_OUT<2:0>> created at line 45.
+    Found 2-bit adder for signal <write_pointer[1]_GND_25_o_add_8_OUT> created at line 37.
+    Found 3-bit adder for signal <cnt[2]_GND_25_o_add_9_OUT> created at line 38.
+    Found 2-bit adder for signal <read_pointer[1]_GND_25_o_add_13_OUT> created at line 44.
+    Found 3-bit subtractor for signal <GND_25_o_GND_25_o_sub_15_OUT<2:0>> created at line 45.
     Found 16-bit 4-to-1 multiplexer for signal <data_out> created at line 55.
     Summary:
 	inferred   3 Adder/Subtractor(s).
@@ -352,14 +375,14 @@ Synthesizing Unit <VGA_SYNC>.
     Found 11-bit register for signal <V_Counter>.
     Found 11-bit register for signal <H_Counter>.
     Found 1-bit register for signal <oSYNC_COLOR>.
-    Found 12-bit subtractor for signal <GND_25_o_GND_25_o_sub_2_OUT> created at line 26.
-    Found 12-bit subtractor for signal <GND_25_o_GND_25_o_sub_5_OUT> created at line 27.
-    Found 11-bit adder for signal <H_Counter[10]_GND_25_o_add_7_OUT> created at line 39.
-    Found 11-bit adder for signal <V_Counter[10]_GND_25_o_add_14_OUT> created at line 64.
+    Found 12-bit subtractor for signal <GND_27_o_GND_27_o_sub_2_OUT> created at line 26.
+    Found 12-bit subtractor for signal <GND_27_o_GND_27_o_sub_5_OUT> created at line 27.
+    Found 11-bit adder for signal <H_Counter[10]_GND_27_o_add_7_OUT> created at line 39.
+    Found 11-bit adder for signal <V_Counter[10]_GND_27_o_add_14_OUT> created at line 64.
     Found 11-bit comparator lessequal for signal <n0000> created at line 26
     Found 11-bit comparator lessequal for signal <n0004> created at line 27
-    Found 11-bit comparator greater for signal <H_Counter[10]_GND_25_o_LessThan_7_o> created at line 38
-    Found 11-bit comparator greater for signal <V_Counter[10]_GND_25_o_LessThan_14_o> created at line 63
+    Found 11-bit comparator greater for signal <H_Counter[10]_GND_27_o_LessThan_7_o> created at line 38
+    Found 11-bit comparator greater for signal <V_Counter[10]_GND_27_o_LessThan_14_o> created at line 63
     Summary:
 	inferred   4 Adder/Subtractor(s).
 	inferred  25 D-type flip-flop(s).
@@ -371,50 +394,57 @@ Unit <VGA_SYNC> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 15
+# Multipliers                                          : 1
+ 16x1-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 20
  10-bit adder                                          : 1
  11-bit adder                                          : 2
  12-bit subtractor                                     : 2
+ 16-bit adder                                          : 1
+ 16-bit subtractor                                     : 1
  2-bit adder                                           : 2
  24-bit adder                                          : 1
  24-bit subtractor                                     : 2
- 3-bit adder                                           : 1
+ 3-bit adder                                           : 2
  3-bit addsub                                          : 1
+ 3-bit subtractor                                      : 1
  4-bit subtractor                                      : 2
- 8-bit adder                                           : 1
-# Registers                                            : 38
- 1-bit register                                        : 19
+ 8-bit adder                                           : 2
+# Registers                                            : 55
+ 1-bit register                                        : 31
  10-bit register                                       : 1
  11-bit register                                       : 2
- 16-bit register                                       : 2
+ 16-bit register                                       : 4
  2-bit register                                        : 2
  24-bit register                                       : 3
- 3-bit register                                        : 2
+ 3-bit register                                        : 4
  4-bit register                                        : 2
  64-bit register                                       : 1
- 8-bit register                                        : 4
-# Comparators                                          : 11
+ 8-bit register                                        : 5
+# Comparators                                          : 14
  10-bit comparator greater                             : 1
  11-bit comparator greater                             : 4
  11-bit comparator lessequal                           : 2
+ 16-bit comparator lessequal                           : 1
  24-bit comparator greater                             : 2
- 3-bit comparator greater                              : 1
- 8-bit comparator greater                              : 1
-# Multiplexers                                         : 30
- 1-bit 16-to-1 multiplexer                             : 1
+ 3-bit comparator greater                              : 2
+ 8-bit comparator greater                              : 2
+# Multiplexers                                         : 41
+ 1-bit 8-to-1 multiplexer                              : 1
+ 10-bit 2-to-1 multiplexer                             : 1
  11-bit 2-to-1 multiplexer                             : 2
  13-bit 2-to-1 multiplexer                             : 3
- 16-bit 2-to-1 multiplexer                             : 4
+ 16-bit 2-to-1 multiplexer                             : 5
  16-bit 4-to-1 multiplexer                             : 1
  2-bit 2-to-1 multiplexer                              : 3
  24-bit 2-to-1 multiplexer                             : 2
- 3-bit 2-to-1 multiplexer                              : 2
- 32-bit 2-to-1 multiplexer                             : 2
+ 3-bit 2-to-1 multiplexer                              : 5
+ 32-bit 2-to-1 multiplexer                             : 3
  4-bit 2-to-1 multiplexer                              : 3
- 8-bit 2-to-1 multiplexer                              : 7
+ 8-bit 2-to-1 multiplexer                              : 12
 # Tristates                                            : 16
  1-bit tristate buffer                                 : 16
-# FSMs                                                 : 2
+# FSMs                                                 : 3
 
 =========================================================================
 
@@ -422,6 +452,8 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+Reading core <ipcore_dir/ram.ngc>.
+Loading core <ram> for timing and area information for instance <ram8>.
 
 Synthesizing (advanced) Unit <VGA_SYNC>.
 The following registers are absorbed into counter <H_Counter>: 1 register on signal <H_Counter>.
@@ -440,57 +472,67 @@ The following registers are absorbed into counter <state_cnt>: 1 register on sig
 Unit <sdram_controller> synthesized (advanced).
 
 Synthesizing (advanced) Unit <top_sdram>.
+The following registers are absorbed into counter <bit>: 1 register on signal <bit>.
 The following registers are absorbed into counter <bit_cnt>: 1 register on signal <bit_cnt>.
+The following registers are absorbed into counter <cnt_w>: 1 register on signal <cnt_w>.
 The following registers are absorbed into counter <half_word_cnt>: 1 register on signal <half_word_cnt>.
 The following registers are absorbed into counter <read_cnt>: 1 register on signal <read_cnt>.
+The following registers are absorbed into counter <cnt_r>: 1 register on signal <cnt_r>.
 Unit <top_sdram> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 5
+# Multipliers                                          : 1
+ 16x1-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 7
  12-bit subtractor                                     : 2
  24-bit subtractor                                     : 1
- 3-bit adder                                           : 1
- 8-bit adder                                           : 1
-# Counters                                             : 10
+ 3-bit adder                                           : 2
+ 8-bit adder                                           : 2
+# Counters                                             : 13
  10-bit up counter                                     : 1
  11-bit up counter                                     : 2
+ 16-bit down counter                                   : 1
+ 16-bit up counter                                     : 1
  2-bit up counter                                      : 2
  24-bit down counter                                   : 1
  24-bit up counter                                     : 1
+ 3-bit down counter                                    : 1
  3-bit updown counter                                  : 1
  4-bit down counter                                    : 2
-# Registers                                            : 174
- Flip-Flops                                            : 174
-# Comparators                                          : 11
+# Registers                                            : 197
+ Flip-Flops                                            : 197
+# Comparators                                          : 14
  10-bit comparator greater                             : 1
  11-bit comparator greater                             : 4
  11-bit comparator lessequal                           : 2
+ 16-bit comparator lessequal                           : 1
  24-bit comparator greater                             : 2
- 3-bit comparator greater                              : 1
- 8-bit comparator greater                              : 1
-# Multiplexers                                         : 101
- 1-bit 16-to-1 multiplexer                             : 1
+ 3-bit comparator greater                              : 2
+ 8-bit comparator greater                              : 2
+# Multiplexers                                         : 109
  1-bit 2-to-1 multiplexer                              : 66
  1-bit 4-to-1 multiplexer                              : 16
+ 1-bit 8-to-1 multiplexer                              : 1
  13-bit 2-to-1 multiplexer                             : 3
  2-bit 2-to-1 multiplexer                              : 2
  24-bit 2-to-1 multiplexer                             : 1
- 3-bit 2-to-1 multiplexer                              : 2
- 32-bit 2-to-1 multiplexer                             : 2
+ 3-bit 2-to-1 multiplexer                              : 4
+ 32-bit 2-to-1 multiplexer                             : 3
  4-bit 2-to-1 multiplexer                              : 1
- 8-bit 2-to-1 multiplexer                              : 7
-# FSMs                                                 : 2
+ 8-bit 2-to-1 multiplexer                              : 12
+# FSMs                                                 : 3
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:1989 - Unit <top_sdram>: instances <uart>, <uart_rx> of unit <uart_rx> are equivalent, second instance is removed
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <uart_rx/FSM_1> on signal <r_SM_Main[1:3]> with user encoding.
+Optimizing FSM <uart/FSM_0> on signal <r_SM_Main[1:3]> with user encoding.
 -------------------
  State | Encoding
 -------------------
@@ -501,33 +543,33 @@ Optimizing FSM <uart_rx/FSM_1> on signal <r_SM_Main[1:3]> with user encoding.
  100   | 100
 -------------------
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <contr/FSM_0> on signal <state[1:5]> with user encoding.
+Optimizing FSM <contr/FSM_1> on signal <state[1:5]> with sequential encoding.
 -------------------
  State | Encoding
 -------------------
  00000 | 00000
- 01000 | 01000
- 00010 | 00010
- 00011 | 00011
- 00100 | 00100
- 01010 | 01010
- 01001 | 01001
- 00101 | 00101
- 01011 | 01011
- 01100 | 01100
- 01101 | 01101
- 01110 | 01110
- 01111 | 01111
- 10001 | 10001
- 10010 | 10010
- 10011 | 10011
- 10100 | 10100
- 11001 | 11001
- 11010 | 11010
- 11011 | 11011
- 11000 | 11000
- 10000 | 10000
- 00001 | 00001
+ 00010 | 00001
+ 00011 | 00010
+ 00100 | 00011
+ 01010 | 00100
+ 01001 | 00101
+ 00101 | 00110
+ 01011 | 00111
+ 01100 | 01000
+ 01101 | 01001
+ 01110 | 01010
+ 01111 | 01011
+ 10001 | 01100
+ 10010 | 01101
+ 10011 | 01110
+ 10100 | 01111
+ 11001 | 10000
+ 11010 | 10001
+ 11011 | 10010
+ 11000 | 10011
+ 10000 | 10100
+ 00001 | 10101
+ 01000 | 10110
 -------------------
 WARNING:Xst:1710 - FF/Latch <command_1> (without init value) has a constant value of 0 in block <sdram_controller>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <command_2> (without init value) has a constant value of 0 in block <sdram_controller>. This FF/Latch will be trimmed during the optimization process.
@@ -543,7 +585,91 @@ Optimizing unit <uart_rx> ...
 Optimizing unit <fifo> ...
 
 Optimizing unit <VGA_SYNC> ...
-INFO:Xst:2261 - The FF/Latch <uart_rx/r_SM_Main_FSM_FFd1> in Unit <top_sdram> is equivalent to the following FF/Latch, which will be removed : <uart_rx/r_Rx_DV> 
+WARNING:Xst:2677 - Node <contr/rd_data_r_15> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <contr/rd_data_r_14> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <contr/rd_data_r_13> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <contr/rd_data_r_12> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <contr/rd_data_r_11> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <contr/rd_data_r_10> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <contr/rd_data_r_9> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <contr/rd_data_r_8> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <contr/rd_data_r_7> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <contr/rd_data_r_6> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <contr/rd_data_r_5> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <contr/rd_data_r_4> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <contr/rd_data_r_3> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <contr/rd_data_r_2> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <contr/rd_data_r_1> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <contr/rd_data_r_0> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/read_pointer_1> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/read_pointer_0> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/write_pointer_1> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/write_pointer_0> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_63> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_62> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_61> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_60> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_59> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_58> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_57> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_56> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_55> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_54> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_53> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_52> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_51> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_50> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_49> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_48> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_47> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_46> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_45> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_44> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_43> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_42> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_41> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_40> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_39> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_38> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_37> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_36> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_35> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_34> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_33> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_32> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_31> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_30> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_29> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_28> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_27> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_26> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_25> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_24> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_23> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_22> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_21> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_20> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_19> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_18> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_17> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_16> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_15> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_14> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_13> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_12> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_11> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_10> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_9> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_8> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_7> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_6> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_5> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_4> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_3> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_2> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_1> of sequential type is unconnected in block <top_sdram>.
+WARNING:Xst:2677 - Node <fifo_to_vga/mem_0_0> of sequential type is unconnected in block <top_sdram>.
+INFO:Xst:2261 - The FF/Latch <uart/r_SM_Main_FSM_FFd1> in Unit <top_sdram> is equivalent to the following FF/Latch, which will be removed : <uart/r_Rx_DV> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -552,15 +678,15 @@ Found area constraint ratio of 100 (+ 5) on block top_sdram, actual ratio is 9.
 Final Macro Processing ...
 
 Processing Unit <top_sdram> :
-	Found 2-bit shift register for signal <uart_rx/r_Rx_Data>.
+	Found 2-bit shift register for signal <uart/r_Rx_Data>.
 Unit <top_sdram> processed.
 
 =========================================================================
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 269
- Flip-Flops                                            : 269
+# Registers                                            : 221
+ Flip-Flops                                            : 221
 # Shift Registers                                      : 1
  2-bit shift register                                  : 1
 
@@ -585,30 +711,30 @@ Top Level Output File Name         : top_sdram.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 701
-#      GND                         : 1
-#      INV                         : 54
-#      LUT1                        : 34
-#      LUT2                        : 19
+# BELS                             : 741
+#      GND                         : 2
+#      INV                         : 65
+#      LUT1                        : 41
+#      LUT2                        : 16
 #      LUT3                        : 60
-#      LUT4                        : 112
-#      LUT5                        : 50
-#      LUT6                        : 151
-#      MUXCY                       : 111
-#      MUXF7                       : 3
-#      MUXF8                       : 1
-#      VCC                         : 1
-#      XORCY                       : 104
-# FlipFlops/Latches                : 270
-#      FD                          : 20
-#      FDC                         : 28
-#      FDCE                        : 123
-#      FDE                         : 12
-#      FDP                         : 6
-#      FDPE                        : 7
-#      FDR                         : 70
-#      FDRE                        : 1
-#      FDSE                        : 3
+#      LUT4                        : 63
+#      LUT5                        : 70
+#      LUT6                        : 141
+#      MUXCY                       : 140
+#      MUXF7                       : 5
+#      VCC                         : 2
+#      XORCY                       : 136
+# FlipFlops/Latches                : 227
+#      FD                          : 21
+#      FDC                         : 33
+#      FDCE                        : 73
+#      FDE                         : 21
+#      FDP                         : 14
+#      FDPE                        : 11
+#      FDR                         : 14
+#      FDRE                        : 40
+# RAMS                             : 19
+#      RAMB16BWER                  : 19
 # Shift Registers                  : 1
 #      SRLC16E                     : 1
 # Clock Buffers                    : 2
@@ -616,8 +742,8 @@ Primitive and Black Box Usage:
 # IO Buffers                       : 61
 #      IBUF                        : 2
 #      IBUFG                       : 1
-#      IOBUF                       : 16
 #      OBUF                        : 42
+#      OBUFT                       : 16
 # Others                           : 1
 #      PLL_ADV                     : 1
 
@@ -628,24 +754,26 @@ Selected Device : 6slx9tqg144-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             270  out of  11440     2%  
- Number of Slice LUTs:                  481  out of   5720     8%  
-    Number used as Logic:               480  out of   5720     8%  
+ Number of Slice Registers:             227  out of  11440     1%  
+ Number of Slice LUTs:                  457  out of   5720     7%  
+    Number used as Logic:               456  out of   5720     7%  
     Number used as Memory:                1  out of   1440     0%  
        Number used as SRL:                1
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    495
-   Number with an unused Flip Flop:     225  out of    495    45%  
-   Number with an unused LUT:            14  out of    495     2%  
-   Number of fully used LUT-FF pairs:   256  out of    495    51%  
-   Number of unique control sets:        16
+ Number of LUT Flip Flop pairs used:    487
+   Number with an unused Flip Flop:     260  out of    487    53%  
+   Number with an unused LUT:            30  out of    487     6%  
+   Number of fully used LUT-FF pairs:   197  out of    487    40%  
+   Number of unique control sets:        18
 
 IO Utilization: 
  Number of IOs:                          61
  Number of bonded IOBs:                  61  out of    102    59%  
 
 Specific Feature Utilization:
+ Number of Block RAM/FIFO:               19  out of     32    59%  
+    Number using Block RAM only:         19
  Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
  Number of PLL_ADVs:                      1  out of      2    50%  
 
@@ -670,7 +798,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-pll25_175/pll_base_inst/CLKOUT0    | BUFG                   | 259   |
+pll25_175/pll_base_inst/CLKOUT0    | BUFG                   | 235   |
 vga/H_SYNC_CLK                     | NONE(vga/V_Counter_10) | 12    |
 -----------------------------------+------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -683,9 +811,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 4.842ns (Maximum Frequency: 206.548MHz)
-   Minimum input arrival time before clock: 4.843ns
-   Maximum output required time after clock: 6.983ns
+   Minimum period: 6.825ns (Maximum Frequency: 146.523MHz)
+   Minimum input arrival time before clock: 4.899ns
+   Maximum output required time after clock: 9.767ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -694,49 +822,52 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'pll25_175/pll_base_inst/CLKOUT0'
-  Clock period: 4.842ns (frequency: 206.548MHz)
-  Total number of paths / destination ports: 7535 / 428
+  Clock period: 6.825ns (frequency: 146.523MHz)
+  Total number of paths / destination ports: 12353 / 1033
 -------------------------------------------------------------------------
-Delay:               4.842ns (Levels of Logic = 4)
-  Source:            bit_cnt_2 (FF)
-  Destination:       fifo_to_vga/cnt_0 (FF)
+Delay:               6.825ns (Levels of Logic = 5)
+  Source:            vga/H_Counter_2 (FF)
+  Destination:       bit_cnt_0 (FF)
   Source Clock:      pll25_175/pll_base_inst/CLKOUT0 rising
   Destination Clock: pll25_175/pll_base_inst/CLKOUT0 rising
 
-  Data Path: bit_cnt_2 to fifo_to_vga/cnt_0
+  Data Path: vga/H_Counter_2 to bit_cnt_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDP:C->Q              7   0.447   1.118  bit_cnt_2 (bit_cnt_2)
-     LUT6:I1->O            9   0.203   0.830  re1 (re1)
-     LUT5:I4->O            2   0.205   0.845  re217_SW2 (N66)
-     LUT5:I2->O            1   0.205   0.684  re4_SW4 (N108)
-     LUT6:I4->O            1   0.203   0.000  fifo_to_vga/cnt_0_rstpot (fifo_to_vga/cnt_0_rstpot)
-     FDC:D                     0.102          fifo_to_vga/cnt_0
+     FDC:C->Q             12   0.447   1.273  vga/H_Counter_2 (vga/H_Counter_2)
+     LUT6:I0->O            3   0.203   0.651  vga/Mmux_n0032411_SW0 (N66)
+     LUT6:I5->O            9   0.205   0.830  vga/Mmux_n0032411 (vga/Mmux_n003241)
+     LUT4:I3->O            2   0.205   0.981  vga/Mmux_n003241 (oCurrent_X<2>)
+     LUT6:I0->O            2   0.203   0.617  re11 (re11)
+     LUT5:I4->O            4   0.205   0.683  _n0206_inv1 (_n0206_inv)
+     FDPE:CE                   0.322          bit_cnt_0
     ----------------------------------------
-    Total                      4.842ns (1.365ns logic, 3.477ns route)
-                                       (28.2% logic, 71.8% route)
+    Total                      6.825ns (1.790ns logic, 5.035ns route)
+                                       (26.2% logic, 73.8% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'vga/H_SYNC_CLK'
-  Clock period: 4.101ns (frequency: 243.840MHz)
-  Total number of paths / destination ports: 665 / 12
+  Clock period: 4.495ns (frequency: 222.492MHz)
+  Total number of paths / destination ports: 749 / 12
 -------------------------------------------------------------------------
-Delay:               4.101ns (Levels of Logic = 12)
-  Source:            vga/V_Counter_3 (FF)
+Delay:               4.495ns (Levels of Logic = 14)
+  Source:            vga/V_Counter_5 (FF)
   Destination:       vga/V_Counter_10 (FF)
   Source Clock:      vga/H_SYNC_CLK rising
   Destination Clock: vga/H_SYNC_CLK rising
 
-  Data Path: vga/V_Counter_3 to vga/V_Counter_10
+  Data Path: vga/V_Counter_5 to vga/V_Counter_10
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             10   0.447   1.085  vga/V_Counter_3 (vga/V_Counter_3)
-     LUT4:I1->O            4   0.205   0.684  vga/V_Counter[10]_GND_25_o_LessThan_14_o_inv_SW0 (N18)
-     LUT6:I5->O            4   0.205   0.684  vga/V_Counter[10]_GND_25_o_LessThan_14_o_inv (vga/V_Counter[10]_GND_25_o_LessThan_14_o_inv)
-     LUT3:I2->O            1   0.205   0.000  vga/Mcount_V_Counter_lut<2> (vga/Mcount_V_Counter_lut<2>)
-     MUXCY:S->O            1   0.172   0.000  vga/Mcount_V_Counter_cy<2> (vga/Mcount_V_Counter_cy<2>)
+     FDC:C->Q              9   0.447   1.058  vga/V_Counter_5 (vga/V_Counter_5)
+     LUT4:I1->O            2   0.205   0.721  vga/V_Counter[10]_GND_27_o_LessThan_14_o_inv_SW0 (N22)
+     LUT6:I4->O            8   0.203   1.031  vga/V_Counter[10]_GND_27_o_LessThan_14_o_inv (vga/V_Counter[10]_GND_27_o_LessThan_14_o_inv)
+     LUT3:I0->O            1   0.205   0.000  vga/Mcount_V_Counter_lut<0> (vga/Mcount_V_Counter_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  vga/Mcount_V_Counter_cy<0> (vga/Mcount_V_Counter_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  vga/Mcount_V_Counter_cy<1> (vga/Mcount_V_Counter_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  vga/Mcount_V_Counter_cy<2> (vga/Mcount_V_Counter_cy<2>)
      MUXCY:CI->O           1   0.019   0.000  vga/Mcount_V_Counter_cy<3> (vga/Mcount_V_Counter_cy<3>)
      MUXCY:CI->O           1   0.019   0.000  vga/Mcount_V_Counter_cy<4> (vga/Mcount_V_Counter_cy<4>)
      MUXCY:CI->O           1   0.019   0.000  vga/Mcount_V_Counter_cy<5> (vga/Mcount_V_Counter_cy<5>)
@@ -747,14 +878,14 @@ Delay:               4.101ns (Levels of Logic = 12)
      XORCY:CI->O           1   0.180   0.000  vga/Mcount_V_Counter_xor<10> (vga/Mcount_V_Counter10)
      FDC:D                     0.102          vga/V_Counter_10
     ----------------------------------------
-    Total                      4.101ns (1.649ns logic, 2.452ns route)
-                                       (40.2% logic, 59.8% route)
+    Total                      4.495ns (1.685ns logic, 2.810ns route)
+                                       (37.5% logic, 62.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'pll25_175/pll_base_inst/CLKOUT0'
-  Total number of paths / destination ports: 241 / 241
+  Total number of paths / destination ports: 181 / 180
 -------------------------------------------------------------------------
-Offset:              4.843ns (Levels of Logic = 2)
+Offset:              4.899ns (Levels of Logic = 2)
   Source:            rst_n (PAD)
   Destination:       mem_buf_L_0 (FF)
   Destination Clock: pll25_175/pll_base_inst/CLKOUT0 rising
@@ -763,54 +894,61 @@ Offset:              4.843ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            13   1.222   0.932  rst_n_IBUF (rst_n_IBUF)
-     INV:I->O            200   0.206   2.053  contr/rst_n_inv1_INV_0 (contr/rst_n_inv)
-     FDRE:R                    0.430          contr/command_0
+     IBUF:I->O            17   1.222   1.027  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O            157   0.206   2.014  contr/rst_n_inv1_INV_0 (contr/rst_n_inv)
+     FDRE:R                    0.430          contr/wr_data_r_0
     ----------------------------------------
-    Total                      4.843ns (1.858ns logic, 2.985ns route)
-                                       (38.4% logic, 61.6% route)
+    Total                      4.899ns (1.858ns logic, 3.041ns route)
+                                       (37.9% logic, 62.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'pll25_175/pll_base_inst/CLKOUT0'
-  Total number of paths / destination ports: 1961 / 54
+  Total number of paths / destination ports: 3629 / 54
 -------------------------------------------------------------------------
-Offset:              6.983ns (Levels of Logic = 5)
-  Source:            fifo_to_vga/read_pointer_0 (FF)
+Offset:              9.767ns (Levels of Logic = 7)
+  Source:            ram8/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram (RAM)
   Destination:       RGB<15> (PAD)
   Source Clock:      pll25_175/pll_base_inst/CLKOUT0 rising
 
-  Data Path: fifo_to_vga/read_pointer_0 to RGB<15>
+  Data Path: ram8/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram to RGB<15>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             19   0.447   1.436  fifo_to_vga/read_pointer_0 (fifo_to_vga/read_pointer_0)
-     LUT6:I0->O            1   0.203   0.827  fifo_to_vga/mux6911 (data_out<14>)
-     LUT6:I2->O            1   0.203   0.000  Mmux_RGB1_4 (Mmux_RGB1_4)
-     MUXF7:I1->O           1   0.140   0.000  Mmux_RGB1_3_f7 (Mmux_RGB1_3_f7)
-     MUXF8:I1->O          16   0.152   1.004  Mmux_RGB1_2_f8 (RGB_0_OBUF)
+     RAMB16BWER:CLKB->DOB2    1   1.850   0.808  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.ram_doutb<2>)
+     LUT4:I1->O            1   0.205   0.808  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/Mmux_dout_mux71 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/Mmux_dout_mux7)
+     LUT6:I3->O            1   0.205   0.827  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/Mmux_dout_mux72 (doutb<6>)
+     end scope: 'ram8:doutb<6>'
+     LUT6:I2->O            1   0.203   0.000  Mmux_bit[2]_q[7]_Mux_82_o_3 (Mmux_bit[2]_q[7]_Mux_82_o_3)
+     MUXF7:I1->O           1   0.140   0.944  Mmux_bit[2]_q[7]_Mux_82_o_2_f7 (bit[2]_q[7]_Mux_82_o)
+     LUT6:I0->O           16   0.203   1.004  RGB<3>1 (RGB_3_OBUF)
      OBUF:I->O                 2.571          RGB_15_OBUF (RGB<15>)
     ----------------------------------------
-    Total                      6.983ns (3.716ns logic, 3.267ns route)
-                                       (53.2% logic, 46.8% route)
+    Total                      9.767ns (5.377ns logic, 4.390ns route)
+                                       (55.1% logic, 44.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'vga/H_SYNC_CLK'
-  Total number of paths / destination ports: 1 / 1
+  Total number of paths / destination ports: 2289 / 17
 -------------------------------------------------------------------------
-Offset:              4.295ns (Levels of Logic = 1)
-  Source:            vga/V_SYNC_CLK (FF)
-  Destination:       V_SYNC (PAD)
+Offset:              9.729ns (Levels of Logic = 6)
+  Source:            vga/V_Counter_4 (FF)
+  Destination:       RGB<15> (PAD)
   Source Clock:      vga/H_SYNC_CLK rising
 
-  Data Path: vga/V_SYNC_CLK to V_SYNC
+  Data Path: vga/V_Counter_4 to RGB<15>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDP:C->Q             31   0.447   1.277  vga/V_SYNC_CLK (vga/V_SYNC_CLK)
-     OBUF:I->O                 2.571          V_SYNC_OBUF (V_SYNC)
+     FDC:C->Q             11   0.447   1.247  vga/V_Counter_4 (vga/V_Counter_4)
+     LUT6:I0->O            8   0.203   0.907  vga/Mmux_n0033911 (vga/Mmux_n003391)
+     LUT6:I4->O            2   0.203   0.981  vga/Mmux_n0033111 (oCurrent_Y<9>)
+     LUT6:I0->O            1   0.203   0.580  GND_1_o_oCurrent_Y[10]_LessThan_31_o1_SW0 (N2)
+     LUT6:I5->O            6   0.205   0.973  GND_1_o_oCurrent_Y[10]_LessThan_31_o1 (GND_1_o_oCurrent_Y[10]_LessThan_31_o)
+     LUT6:I3->O           16   0.205   1.004  RGB<3>1 (RGB_3_OBUF)
+     OBUF:I->O                 2.571          RGB_15_OBUF (RGB<15>)
     ----------------------------------------
-    Total                      4.295ns (3.018ns logic, 1.277ns route)
-                                       (70.3% logic, 29.7% route)
+    Total                      9.729ns (4.037ns logic, 5.692ns route)
+                                       (41.5% logic, 58.5% route)
 
 =========================================================================
 
@@ -822,8 +960,8 @@ Clock to Setup on destination clock pll25_175/pll_base_inst/CLKOUT0
                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -------------------------------+---------+---------+---------+---------+
-pll25_175/pll_base_inst/CLKOUT0|    4.842|         |         |         |
-vga/H_SYNC_CLK                 |   10.321|         |         |         |
+pll25_175/pll_base_inst/CLKOUT0|    6.825|         |         |         |
+vga/H_SYNC_CLK                 |   10.341|         |         |         |
 -------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock vga/H_SYNC_CLK
@@ -831,21 +969,21 @@ Clock to Setup on destination clock vga/H_SYNC_CLK
                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -------------------------------+---------+---------+---------+---------+
-pll25_175/pll_base_inst/CLKOUT0|    4.802|         |         |         |
-vga/H_SYNC_CLK                 |    4.101|         |         |         |
+pll25_175/pll_base_inst/CLKOUT0|    4.800|         |         |         |
+vga/H_SYNC_CLK                 |    4.495|         |         |         |
 -------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.42 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.70 secs
  
 --> 
 
-Total memory usage is 261996 kilobytes
+Total memory usage is 264172 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   30 (   0 filtered)
-Number of infos    :    4 (   0 filtered)
+Number of warnings :  122 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
 

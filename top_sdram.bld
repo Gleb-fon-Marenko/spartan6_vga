@@ -6,6 +6,7 @@ Command Line: D:\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -intstyle ise
 top_sdram.ngc top_sdram.ngd
 
 Reading NGO file "D:/14.7/ISE_DS/5-Example/vga/top_sdram.ngc" ...
+Loading design module "ipcore_dir/ram.ngc"...
 Gathering constraint information from source properties...
 Done.
 
@@ -27,10 +28,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 166292 kilobytes
+Total memory usage is 168340 kilobytes
 
 Writing NGD file "top_sdram.ngd" ...
-Total REAL time to NGDBUILD completion:  2 sec
-Total CPU time to NGDBUILD completion:   2 sec
+Total REAL time to NGDBUILD completion:  3 sec
+Total CPU time to NGDBUILD completion:   3 sec
 
 Writing NGDBUILD log file "top_sdram.bld"...
