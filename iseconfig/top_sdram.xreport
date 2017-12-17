@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-11-28T00:24:51</DateModified>
+  <DateModified>2017-12-17T17:38:51</DateModified>
   <ModuleName>top_sdram</ModuleName>
   <SummaryTimeStamp>2017-11-28T00:22:54</SummaryTimeStamp>
   <SavedFilePath>D:/14.7/ISE_DS/5-Example/vga/iseconfig/top_sdram.xreport</SavedFilePath>
